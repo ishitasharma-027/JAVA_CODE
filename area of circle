@@ -1,0 +1,24 @@
+package oops;
+
+import java.util.Scanner;
+
+class A_of_circle{
+	double radius;
+	public void setnumber(double radius) {
+		this.radius=radius;
+	}
+	public double are() {
+		return (3.14*radius*radius);
+	}
+}
+
+public class circle {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the radius of circle: ");
+		double radius = sc.nextDouble();
+		A_of_circle obj= new A_of_circle();
+		obj.setnumber(radius);
+		System.out.print("Area of the circle is: "+obj.are());
+	}
+}
