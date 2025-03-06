@@ -1,0 +1,22 @@
+
+
+public class swap {
+	public static void main(String[] args) {
+		int num=4325,last=num%10 ,temp=0;
+		int newn = num;
+		int length = 0;
+		while(num!=0) {
+			length += 1;
+			num=num/10;
+		}
+		System.out.println(length);
+		double first = newn / Math.pow(10,length-1);
+		int ff = (int) first;
+		temp=ff;
+		ff=last;
+		last=temp;
+		System.out.println("first digit after swapping: "+ff);
+		System.out.println("last digit after swapping: "+last);
+		System.out.println(num);
+	}
+}
