@@ -1,0 +1,32 @@
+package oops;
+
+import java.util.Scanner;
+
+class Area{
+		double length;
+		double breadth;
+		int area;
+		public void setdim(double length, double breadth) {
+			this.length = length;
+			this.breadth = breadth;
+		}
+		public double getArea() {
+			return length*breadth;
+			
+		}
+	}
+	
+	public class assignment{
+		public static void main(String[] args) {
+			Scanner sc= new Scanner(System.in);
+			System.out.print("enter the length of the rectangle:");
+			double length= sc.nextDouble();
+			System.out.print("enter tge breadth of the rectangle:");
+			double breadth= sc.nextDouble();
+			Area obj = new Area();
+			obj.setdim(length,breadth);
+			double area= obj.getArea();
+			System.out.print("The area of the reactangle is: "+area);
+		}
+	}
+	
